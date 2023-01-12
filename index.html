@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/svg" href="Vector.svg">
+        <title>Decidificador de texto</title>
+        
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <img id="reset" src="vector.svg" alt="letra a" title="Use para resetar">
+        </header>
+        
+        <main class="conteudo">
+
+            <section class="conteudo-esquerda">
+                    <main class="texto-resize">
+                        <textarea id="textoParaEnDec" onfocus="this.value='';" class="texto-input" placeholder="Digite seu texto"></textarea>
+                    </main>
+                    <footer class="btna">
+                        <div class="aviso">
+                            <img src="exclamacao.svg" alt="!">
+                            <p>Apenas letras minúsculas e sem acento.</p>
+                        </div>
+                        <div class="botoes">
+                            <button id="encode" class="buttonEncode">Criptografar</button>
+                            <button id="decode" class="buttonDecode">Descriptografar</button>
+                        </div>
+                    </footer>
+            </section>
+
+            <section class="conteudo-direita">
+                <div class="caixa">
+                    <div class="img-lupa">
+                        <img class="img-direita" style="display: block;" src="lupa.svg" id="lupa">
+                    </div>
+                    <div class="resize-resposta" id="teste-resposta">
+                        <span id="resposta" class="resposta" role="textbox" placeholder="Nenhuma mensagem encontrada" contenteditable></span>
+                    </div>
+                    <p id="explicacao" style="display: block">Digite o texto que você deseja criptografar ou descriptografar.</p>
+                    <div class="botao-direita">
+                        <button id="copiar" style="display: none;" class="buttonCopiar">Copiar texto</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="rodape">
+             <div class="dev">
+                <p>&#169; Desenvolvido por Júnior Medeiros</p>
+            </div>
+            <div class="links">
+                 <a href="https://www.linkedin.com/in/j%C3%BAnior-medeiros-a58072259/" target="_blank"><img class="img" src="linkedin.svg" alt="linkedin"></a>
+                 <a href="https://github.com/Medeiros000" target="_blank"><img class="img" src="github.svg" alt="github"></a>
+                 <a href="https://twitter.com/tHE_bISoM" target="_blank"><img class="img" src="twitter.svg" alt="twitter"></a>
+                 <a href="https://www.instagram.com/medeiros000/" target="_blank"><img class="img" src="instagram.svg" alt="instagram"></a>
+            </div>
+        </footer>
+
+        <script src="codificador.js"></script>
+    </body>
+</html>
